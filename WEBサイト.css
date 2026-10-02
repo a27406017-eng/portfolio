@@ -13,8 +13,8 @@ header.nav-container {
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: #f6f6fe;
-    border-bottom: 2px solid #333;
+    /* background-color: #f6f6fe;
+    border-bottom: 2px solid #333; */
     /* 下線をつけてヘッダーらしく */
     padding: 15px 20px;
 }
@@ -387,8 +387,8 @@ header.nav-container {
     max-width: none !important;
     margin: 0 !important;
     padding: 14px 5vw;
-    background: var(--site-sky);
-    border-bottom: 1px solid var(--site-ink);
+    /* background: var(--site-sky);
+    border-bottom: 1px solid var(--site-ink); */
 }
 
 .nav-container ul {
@@ -793,3 +793,4 @@ footer {
         height: 320px;
     }
 }
+
