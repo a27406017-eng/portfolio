@@ -794,3 +794,219 @@ footer {
     }
 }
 
+/* Responsive overrides */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+picture {
+    max-width: 100%;
+}
+
+picture {
+    display: block;
+}
+
+@media (max-width: 640px) {
+    header.nav-container {
+        padding: 10px 12px;
+    }
+
+    .nav-container ul {
+        gap: 4px;
+    }
+
+    .nav-container a {
+        padding: 8px 9px;
+        font-size: clamp(.68rem, 3vw, .78rem);
+        letter-spacing: 0;
+    }
+
+    .page-content,
+    .page-content:not(#about):not(#profile):not(#portfolio):not(#contact) {
+        width: calc(100% - 24px);
+        padding-top: 56px;
+    }
+
+    #about {
+        min-height: 520px;
+        padding-top: 25px;
+    }
+
+    #about h1,
+    #portfolio > h2,
+    .page-content > h2 {
+        font-size: clamp(2.6rem, 14vw, 4.2rem);
+        line-height: .95;
+    }
+
+    #about main p,
+    .story-content p,
+    #portfolio figcaption p {
+        font-size: clamp(.8rem, 3.5vw, .95rem);
+        line-height: 1.75;
+    }
+
+    #profile {
+        padding: 56px 12px 70px;
+    }
+
+    .profile-container {
+        gap: 0;
+        margin-bottom: 45px;
+    }
+
+    .icon-img {
+        width: min(100%, 250px);
+    }
+
+    .sub-title table {
+        margin-top: 0 !important;
+        table-layout: fixed;
+    }
+
+    .sub-title table th,
+    .sub-title table td {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        line-height: 1.65;
+    }
+
+    .sub-title table th {
+        font-size: clamp(1.35rem, 6vw, 1.8rem) !important;
+    }
+
+    .sub-title table td {
+        font-size: clamp(.82rem, 3.7vw, 1rem) !important;
+    }
+
+    .en-text {
+        margin-left: 4px;
+    }
+
+    .story-content h3 {
+        font-size: clamp(1.45rem, 7vw, 2rem);
+        line-height: 1.35;
+    }
+
+    .pixiv-link {
+        display: block;
+        overflow-wrap: anywhere;
+    }
+
+    #portfolio {
+        padding-top: 70px;
+    }
+
+    #portfolio .single-img {
+        width: 100%;
+        margin: 42px auto 12px;
+        padding: 6px;
+    }
+
+    #portfolio .single-img img,
+    #portfolio .miku-images img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        padding: 6px;
+        object-fit: contain;
+    }
+
+    #portfolio .miku-images {
+        display: block;
+    }
+
+    #portfolio .miku-images img + img {
+        margin-top: 10px;
+    }
+
+    #portfolio figcaption {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    #portfolio figcaption h3 {
+        font-size: clamp(1.05rem, 5vw, 1.35rem);
+        line-height: 1.45;
+    }
+
+    #portfolio .portfolio-img {
+        display: block;
+        width: min(100%, 300px) !important;
+        height: auto !important;
+        margin: 12px auto;
+    }
+
+    .work-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    figure.work-card {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .awaawa-img .image-group,
+    .work-card.alice-img .image-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        overflow: visible;
+        padding: 12px;
+    }
+
+    .awaawa-img .image-group img,
+    .work-card.alice-img .image-group img,
+    .kemo-img > .single-img {
+        width: min(100%, 300px) !important;
+        min-width: 0;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    .work-card figcaption {
+        width: 100%;
+    }
+
+    #contact {
+        width: calc(100% - 24px);
+        padding-bottom: 75px;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact select,
+    #contact textarea {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .image-modal {
+        padding: 14px;
+    }
+
+    .image-modal-content {
+        max-width: 100%;
+        max-height: 82vh;
+    }
+
+    .image-modal-close {
+        top: 8px;
+        right: 12px;
+        font-size: 2rem;
+    }
+}
